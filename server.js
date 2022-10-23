@@ -43,9 +43,6 @@ app.get('/home', (req, res) => {
 			req.session.username +
 			"<br>" + req.session.id
 			+ "!!!" +	"<br><a href='./logout'>Logout</a>" );
-    // res.send("Welcome " + req.session.username );
-    // res.send("Session ID: " + req.session.id);
-    // res.send("<a href='./logout'>Logout</a>")
   }
   else {
     res.redirect('/login.html');
